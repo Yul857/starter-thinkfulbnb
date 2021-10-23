@@ -34,52 +34,37 @@
       <!-- Stay -->
       <section id="stay">
         <h2>Find the perfect vacation rental</h2>
-        <!-- Create a form here -->
-        <form>
-          <div>
-          <label for='location-message'>Location</label>
-          <input
-            id='location-message'
-            type='text'
-            name='location'
-            placeholder='Search destination'
-            required
-          />
+        <div class ="group">
+          <div class = "item">
+            <form>
+              <div class ="item item-double">
+                <label for ="location">Location</label>
+                <input id="location" type ="text" name= "location" placeholder="Search destination">
+              </div>
+              <div class ="item item-double">
+                <label for = "arrive">Arrive</label>
+                <input id="arrive" type ="date" name = "arrive">
+              </div>
+              <div class = "item item-double">
+                <label for ="depart">Depart</label>
+                <input id ="depart" type = "date" name = "depart">
+              </div>
+              <div class = "item item-double">
+                <label for = "type">Type</label>
+                <select name ="type" size ="1">
+                  <option value="apartment">Apartment</option>
+                  <option value="barn">Barn</option>
+                  <option value="castle">Castle</option>
+                  <option value="houseboat">Houseboat</option>
+                  <option value="tiny-house">Tiny House</option>
+                  <option value="yacht">Yacht</option>
+                  <option value="yurt">Yurt</option>
+                </select>
+              </div>
+              <button type="submit">Search</button>
+            </form>
+          </div>
         </div>
-  
-          <div>
-          <label for='arrival'>Arrive</label>
-          <input  
-            id='arrival'
-            type='date'
-            name='arrive'
-            placeholder="mm/dd/yyyy"
-            required
-          />
-        </div>
-  
-          <div>
-          <label for='departure'>Depart</label>
-          <input  
-           id='departure'
-            type='date'
-            name='depart'
-            placeholder="mm/dd/yyyy"
-            required
-          />
-        </div>
-  
-          <div>
-          <label>Type</label>
-          <select name='property' size='1'>
-            <option value='house'>House</option>
-            <option value='apartment'>Apartment</option>
-            <option value='townhouse'>Townhouse</option>
-          </select>
-        </div>
-  
-        <button type="button">Search</button>
-        </form>
       </section>
 
       <!-- About -->
@@ -162,3 +147,4 @@
     </footer>
   </body>
 </html>
+
